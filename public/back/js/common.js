@@ -1,15 +1,20 @@
+// 配置禁用小圆环
+NProgress.configure({
+  showSpinner: false
+});
+$(document).ajaxStart(function () {
+  NProgress.start();
+});
+$(document).ajaxStop(function () {
 
-   $(document).ajaxStart(function () {
-     NProgress.start();
-   });
-   $(document).ajaxStop(function () {
+  //模拟网络加载的时间
+  setTimeout(function () {
+    console.log(1);
 
-     //模拟网络加载的时间
-     setTimeout(function () {
-       NProgress.done();
+    NProgress.done();
+  }, 500);
 
-     }, 1000)
-   });
+});
 
 
 
@@ -17,7 +22,7 @@
 
 
 
- $(function () {  
+$(function () {
   //  切换二级菜单
   $('.lt_aside .nav .category').on('click', function () {
     $(this).next().stop().slideToggle();
@@ -38,13 +43,12 @@
       dataType: "json",
       success: function (info) {
         console.log(info);
-        
+
         if (info.success) {
-          location.href='login.html'
+          location.href = 'login.html'
         }
-        
+
       }
     });
   });
 })
-

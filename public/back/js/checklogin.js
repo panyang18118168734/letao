@@ -1,5 +1,5 @@
  //一进页面就需要判断一下是否已经登录
- $(function () {  
+
   $.ajax({
     type: "get",
     url: "/employee/checkRootLogin",
@@ -14,4 +14,3 @@
       }
     }
   });
-})
