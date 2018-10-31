@@ -42,6 +42,10 @@ img {
   top: 0;
   left: 0;
   z-index: 999;
+  transition: all 1s;
+}
+.lt_aside.hidemenu{
+  left: -180px;
 }
 
 .lt_aside .brand {
@@ -106,6 +110,10 @@ img {
   height: 1000px;
   /* background: skyblue; */
   padding-top:50px; 
+  transition: all 1s;
+}
+.lt_main.hidemenu{
+  padding-left:0px 
 }
 .lt_main .it_topbar{
   height: 50px;
@@ -116,6 +124,10 @@ img {
   left: 0;
   width: 100%;
   padding-left: 180px;
+  transition: all 1s;
+}
+.lt_main .it_topbar.hidemenu{
+  padding-left: 0px;
 }
 
 .lt_main .it_topbar a{
@@ -133,4 +145,7 @@ img {
   width: 48%;
   height: 400px;
   background: skyblue
+}
+.red{
+  color: #A94442;
 }
