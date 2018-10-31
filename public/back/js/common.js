@@ -1,4 +1,4 @@
- $(function () {
+
    $(document).ajaxStart(function () {
      NProgress.start();
    });
@@ -8,10 +8,10 @@
      setTimeout(function () {
        NProgress.done();
 
-     }, 500)
+     }, 1000)
    });
 
- })
+
 
 
 
