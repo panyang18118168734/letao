@@ -1,4 +1,7 @@
 /* 重置样式 */
+html,body{
+  height: 100%;
+}
 ul {
   list-style: none;
   margin: 0;

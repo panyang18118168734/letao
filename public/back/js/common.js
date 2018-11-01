@@ -9,7 +9,7 @@ $(document).ajaxStop(function () {
 
   //模拟网络加载的时间
   setTimeout(function () {
-    console.log(1);
+    // console.log(1);
 
     NProgress.done();
   }, 500);
