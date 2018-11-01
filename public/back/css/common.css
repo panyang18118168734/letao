@@ -176,3 +176,12 @@ img {
 .mb_20{
   margin-bottom:20px; 
 }
+
+.lt_main  tbody img{
+  height: 50px;
+  margin: 0 auto;
+}
+
+.form-group img{
+  width: 100px;
+}
