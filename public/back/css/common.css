@@ -181,6 +181,9 @@ img {
   height: 50px;
   margin: 0 auto;
 }
+ #imgBox img{
+  display: inline-block;
+}
 
 .form-group img{
   width: 100px;
