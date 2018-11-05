@@ -32,8 +32,8 @@
           </div>
           <!-- 查序 -->
           <div class="lt_sort">
-            <a href="#" >上架时间<i class="fa fa-angle-down"></i></a>
-            <a href="#" data-type="price" class="current" >价格<i class="fa fa-angle-down"></i></a>
+            <a href="#">上架时间<i class="fa fa-angle-down"></i></a>
+            <a href="#" data-type="price" class="current">价格<i class="fa fa-angle-down"></i></a>
             <a href="#" data-type="num">库存<i class="fa fa-angle-down"></i></a>
             <a href="#">折扣<i class="fa fa-angle-down"></i></a>
           </div>
@@ -42,7 +42,7 @@
           <div class="It_product">
             <ul class="mui-clearfix" id="productUl">
               <!-- 挖个坑 -->
-              
+
             </ul>
           </div>
         </div>
@@ -80,7 +80,7 @@
     {{each data v i}}
       <li>
         <a href="product.html?productId={{v.id}}">
-          <img src="{{v.pic[0].picAddr}}" alt="">
+          <img src="{{v.pic[0]&& v.pic[0].picAddr}}" alt="">
           <p class="mui-ellipsis-2">{{v.proDesc}} </p>
           <p>
             <span  class="price">¥{{v.price}} </span>

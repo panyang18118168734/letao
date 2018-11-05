@@ -8,7 +8,7 @@ $(function () {
 
   function render() {
 
-    $('#productUl').html("<div class="+"loading"+"></div>")
+    $('#productUl').html("<div class=" + "loading" + "></div>")
 
     var obj = {};
     obj.proName = $('.input_btn').val();
@@ -20,7 +20,7 @@ $(function () {
       var sortValue = $('.lt_sort a.current').find('i').hasClass('fa-angle-down') ? 2 : 1;
       obj[sortName] = sortValue;
     }
-    setTimeout(function () {  
+    setTimeout(function () {
       $.ajax({
         type: "get",
         url: "/product/queryProduct",
@@ -33,7 +33,7 @@ $(function () {
         }
       });
 
-    },1000)
+    }, 1000)
 
   }
 
@@ -47,8 +47,8 @@ $(function () {
   $('.lt_sort a[data-type]').on('click', function () {
     if ($(this).hasClass('current')) {
       $(this).find('i').toggleClass('fa-angle-down').toggleClass('fa-angle-up');
-      
-    }else{
+
+    } else {
       $(this).addClass('current').siblings().removeClass('current');
     }
     render();
