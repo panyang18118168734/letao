@@ -89,7 +89,7 @@ $(function () {
     $('.input_btn').val('');
 
     location.href="searchList.html?key="+key;
-
+   
 
   });
 
